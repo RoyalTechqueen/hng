@@ -151,7 +151,7 @@ header .container{
     padding: 20px;
   }
     .footer-section{
-        max-width: fit-content;
+        background-color: yellow;
     }
 }
 
