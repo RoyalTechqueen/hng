@@ -150,9 +150,15 @@ header .container{
   body{
     padding: 20px;
   }
-    .footer-section{
-        background-color: yellow;
-    }
+  footer p{
+    font-size: 18px;
+  }
+  footer .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
 }
 
 .profile-section {
