@@ -143,7 +143,7 @@ header .container{
         display: none;
     }
 }
-@media (max-width:768px) {
+@media (max-width:1400px) {
   .profile-section{
     margin-top: 50px;
   }
@@ -151,15 +151,24 @@ header .container{
     padding: 20px;
   }
   footer p{
-    font-size: 18px;
+    font-size: 14px;
   }
   footer .links{
-    display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
+    font-size: 14px;
+}
+header .container{
+    align-items: center;
     gap: 4px;
 }
+.logo{
+    margin-right: 12px;
+    gap: 2px;
+}
+.logo h1{
+font-size: 24px;
+
 }
 
 .profile-section {
