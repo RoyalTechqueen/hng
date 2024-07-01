@@ -150,7 +150,9 @@ header .container{
   body{
     padding: 20px;
   }
-    
+    .footer-section{
+        max-width: fit-content;
+    }
 }
 
 .profile-section {
