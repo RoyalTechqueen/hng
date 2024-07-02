@@ -1,3 +1,11 @@
+const hamburgerIcon = document.querySelector('.hamburger-icon');
+const navLinks = document.querySelector('.nav-links');
+const overlay = document.querySelector('.overlay');
+const navToggle = document.querySelector('.nav-toggle');
+
+navLinks.addEventListener('click', e => {
+    toggleNavMenu()
+})
 function updateDateTime() {
     const now = new Date();
     const hours = now.getUTCHours();
@@ -31,25 +39,14 @@ document.addEventListener('scroll', function() {
     }
 });
 
-const hamburgerIcon = document.querySelector('.hamburger-icon');
-const navLinks = document.querySelector('.nav-links');
-const overlay = document.querySelector('.overlay');
-const navToggle = document.querySelector('.nav-toggle');
-
-hamburgerIcon.addEventListener('click', toggleNavMenu);
-overlay.addEventListener('click', toggleNavMenu);
-navToggle.addEventListener('click', toggleNavMenu);
-
 function toggleNavMenu() {
+    // console.log(":::", navlist)
     hamburgerIcon.classList.toggle('open');
     navLinks.classList.toggle('open');
     overlay.classList.toggle('open');
     document.body.classList.toggle('nav-open');
 }
 
-const navLinksList = document.querySelectorAll('.nav-links a');
-navLinksList.forEach(link => {
-    link.addEventListener('click', () => {
-        toggleNavMenu();
-    });
-});
+hamburgerIcon.addEventListener('click', toggleNavMenu);
+overlay.addEventListener('click', toggleNavMenu);
+navToggle.addEventListener('click', toggleNavMenu);
